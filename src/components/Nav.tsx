@@ -4,7 +4,7 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       <a href="#" className={styles.logo}>
-        APEX<span>.</span>
+        Defence Mandate <span>.</span>
       </a>
       <div className={styles.links}>
         <a href="#services">Services</a>

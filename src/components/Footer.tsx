@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.top}>
         <div className={styles.brand}>
-          <p className={styles.logo}>APEX<span>.</span></p>
+          <p className={styles.logo}>Defence Mandate <span>.</span></p>
           <p className={styles.tagline}>
             Connecting exceptional organisations with the talent that defines their future.
           </p>
@@ -14,7 +14,6 @@ export default function Footer() {
           <p className={styles.colTitle}>Services</p>
           <a href="#">Executive Search</a>
           <a href="#">Specialist Roles</a>
-          <a href="#">Interim &amp; Contract</a>
           <a href="#">Talent Advisory</a>
         </div>
         <div className={styles.col}>
@@ -32,7 +31,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.bottom}>
-        <p className={styles.copy}>© 2026 Apex Talent Ltd. All rights reserved.</p>
+        <p className={styles.copy}>© 2026 Defence Mandate Ltd. All rights reserved.</p>
         <div className={styles.socials}>
           <a href="#">LinkedIn</a>
           <a href="#">Twitter</a>
