@@ -1,16 +1,17 @@
 import styles from './Nav.module.css'
+import logo from '../assets/logo.jpg'
 
 export default function Nav() {
   return (
     <nav className={styles.nav}>
       <a href="#" className={styles.logo}>
-        Defence Mandate <span>.</span>
+        <img src={logo} alt="Defence Mandate" />
       </a>
       <div className={styles.links}>
         <a href="#services">Services</a>
         <a href="#process">Process</a>
         <a href="#industries">Industries</a>
-        <a href="#contact" className={styles.cta}>Hire Talent</a>
+        <a href="#contact" className={styles.cta}>Get a Quote</a>
       </div>
     </nav>
   )

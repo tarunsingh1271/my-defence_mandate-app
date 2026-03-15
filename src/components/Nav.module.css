@@ -12,16 +12,14 @@
 }
 
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  font-weight: 900;
-  letter-spacing: -0.5px;
-  color: var(--ink);
+  display: block;
   text-decoration: none;
 }
 
-.logo span {
-  color: var(--rust);
+.logo img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
 }
 
 .links {
