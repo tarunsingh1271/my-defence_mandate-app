@@ -1,0 +1,109 @@
+.section {
+  padding: 120px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  background: var(--cream);
+}
+
+.sectionLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 5vw, 68px);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.title em {
+  font-style: italic;
+  color: var(--rust);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+.input {
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid rgba(13,13,13,0.25);
+  padding: 12px 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+  cursor: none;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: var(--rust);
+}
+
+.input::placeholder {
+  color: rgba(13,13,13,0.3);
+}
+
+.btn {
+  align-self: flex-start;
+  margin-top: 8px;
+  background: var(--rust);
+  color: var(--cream);
+  padding: 16px 36px;
+  border: none;
+  border-radius: 2px;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  background: var(--ink);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .section {
+    grid-template-columns: 1fr;
+    padding: 80px 30px;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

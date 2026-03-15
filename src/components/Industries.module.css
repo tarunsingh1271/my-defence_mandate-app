@@ -1,0 +1,66 @@
+.industries {
+  padding: 120px 60px;
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+.sectionLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.sectionTitle em {
+  font-style: italic;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.tag {
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  padding: 12px 28px;
+  border-radius: 100px;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  cursor: none;
+  transition: all 0.2s;
+}
+
+.tag:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.tag.active {
+  background: var(--rust);
+  border-color: var(--rust);
+  color: var(--cream);
+}
+
+@media (max-width: 1024px) {
+  .industries {
+    padding: 80px 30px;
+  }
+}
