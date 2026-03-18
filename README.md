@@ -1,10 +1,87 @@
+# Defence Mandate App
+
+A React application built with Vite, TypeScript, and modern tooling.
+
+## Docker Setup
+
+This project includes Docker support for easy deployment and development.
+
+### Prerequisites
+
+- Docker installed on your system
+- Docker Compose (optional, for easier container management)
+
+### Quick Start with Docker
+
+1. **Build and run with Docker Compose:**
+   ```bash
+   docker-compose up --build
+   ```
+
+2. **Or build and run manually:**
+   ```bash
+   # Build the image
+   docker build -t defence-mandate-app .
+
+   # Run the container
+   docker run -d -p 3000:80 defence-mandate-app
+   ```
+
+3. **Access the application:**
+   Open your browser and navigate to `http://localhost:3000`
+
+### Docker Commands
+
+- **Stop the container:** `docker-compose down` or `docker stop defence-app`
+- **Rebuild after changes:** `docker-compose up --build`
+- **View logs:** `docker-compose logs` or `docker logs defence-app`
+
+## Development Setup
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+### Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js 20.19+ or 22+
+- npm or yarn
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Preview
+
+```bash
+npm run preview
+```
+
+### Linting
+
+```bash
+npm run lint
+```
+
+## Tech Stack
+
+- **React 19** - UI library
+- **Vite** - Build tool and dev server
+- **TypeScript** - Type safety
+- **ESLint** - Code linting
+- **Docker** - Containerization
 
 ## React Compiler
 
