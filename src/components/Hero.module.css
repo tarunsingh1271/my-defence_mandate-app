@@ -3,7 +3,7 @@
   display: grid;
   position: relative;
   overflow: hidden;
-  align-items: cover;
+  align-items: center; /* or 'start', 'end', 'stretch' */
   justify-items: start;
 }
 

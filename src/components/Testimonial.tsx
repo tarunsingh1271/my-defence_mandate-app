@@ -72,9 +72,6 @@ export default function Testimonial() {
       onMouseLeave={() => setIsPaused(false)}
     >
       <h2 className={styles.heading}>What Our Clients Say</h2>
-      <button className={`${styles.navButton} ${styles.prev}`} onClick={handlePrev}>
-        &#8249;
-      </button>
       <div className={`${styles.fade}`} key={currentIndex}>
         <div className={styles.quoteMark}>"</div>
         <p className={styles.quoteText}>{currentTestimonial.quote}</p>
@@ -86,9 +83,7 @@ export default function Testimonial() {
       <div className={`${styles.visual} ${styles.fade}`} key={currentIndex + 'img'}>
         <img src={currentTestimonial.image} alt="Client" />
       </div>
-      <button className={`${styles.navButton} ${styles.next}`} onClick={handleNext}>
-        &#8250;
-      </button>
+      
       <div className={styles.dots}>
         {testimonials.map((_, index) => (
           <button
