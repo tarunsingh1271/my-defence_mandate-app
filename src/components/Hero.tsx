@@ -21,7 +21,7 @@ export default function Hero() {
       <div className={styles.right}>
         <img
           src="/heroBanner.png"
-          alt="Hero banner showing a Taj Mahal and security Peosons in the foreground"
+          alt="Hero banner showing a Taj Mahal and security Persons in the foreground"
         />
       </div>
 
