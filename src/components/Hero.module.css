@@ -1,29 +1,21 @@
 .hero {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
   overflow: hidden;
+  align-items: cover;
+  justify-items: start;
 }
 
 .hero::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: var(--gold);
-  z-index: 5;
-  opacity: 0;
-  animation: fadeIn 1s 1.2s forwards;
+  display: none;
 }
 
 .left {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 140px 60px 80px;
+  padding: 140px 60px 120px;
   position: relative;
   z-index: 2;
 }
@@ -34,7 +26,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--rust);
-  margin-bottom: 24px;
+  margin-top: 24px;
   opacity: 0;
   animation: fadeUp 0.8s 0.2s forwards;
 }
@@ -117,10 +109,13 @@
 }
 
 .right {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   overflow: hidden;
-  opacity: 0;
-  animation: fadeIn 1.2s 0.3s forwards;
 }
 
 .right img {
@@ -134,18 +129,19 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(245,240,232,0.3) 0%, transparent 60%);
+  background: linear-gradient(to right, rgba(245,240,232,0.8) 0%, transparent 60%);
 }
 
 .statBar {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 50%;
+  right: 0;
   background: var(--ink);
   color: var(--cream);
   padding: 28px 60px;
   display: flex;
+  justify-content: center;
   gap: 60px;
   z-index: 3;
   opacity: 0;

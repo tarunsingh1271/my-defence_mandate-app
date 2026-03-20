@@ -8,6 +8,14 @@
   border-top: 2px solid var(--ink);
 }
 
+.heading {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 36px;
+  color: var(--ink);
+  margin-bottom: 40px;
+}
+
 .quoteMark {
   font-family: 'Playfair Display', serif;
   font-size: 120px;
@@ -45,6 +53,19 @@
   font-weight: 300;
 }
 
+.fade {
+  animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .visual {
   position: relative;
   height: 480px;
@@ -66,6 +87,48 @@
   height: 100%;
   border: 2px solid var(--rust);
   z-index: -1;
+}
+
+.dots {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--slate);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dot.active {
+  background: var(--rust);
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 48px;
+  color: var(--slate);
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
 }
 
 @media (max-width: 1024px) {

@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import Preloader from './components/Preloader'
 import Cursor from './components/Cursor'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
@@ -9,6 +10,7 @@ import Industries from './components/Industries'
 import Testimonial from './components/Testimonial'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
 import { useReveal } from './hooks/useReveal'
 
 export default function App() {
@@ -38,6 +40,7 @@ export default function App() {
 
   return (
     <>
+      <Preloader />
       <Cursor />
       <Nav />
       <Hero />
@@ -48,6 +51,7 @@ export default function App() {
       <Testimonial />
       <Contact />
       <Footer />
+      <BackToTop />
     </>
   )
 }

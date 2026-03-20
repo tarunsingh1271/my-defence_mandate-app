@@ -1,5 +1,6 @@
 import styles from './Nav.module.css'
 import logo from '../assets/logo.jpg'
+import ThemeToggle from './ThemeToggle'
 
 export default function Nav() {
   return (
@@ -13,6 +14,7 @@ export default function Nav() {
         <a href="#industries">Industries</a>
         <a href="#contact" className={styles.cta}>Get a Quote</a>
       </div>
+      <ThemeToggle />
     </nav>
   )
 }
