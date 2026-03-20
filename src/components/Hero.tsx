@@ -20,8 +20,8 @@ export default function Hero() {
 
       <div className={styles.right}>
         <img
-          src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=900&q=80"
-          alt="Professional team collaborating in a modern office setting"
+          src="/heroBanner.png"
+          alt="Hero banner showing a Taj Mahal and security Peosons in the foreground"
         />
       </div>
 
