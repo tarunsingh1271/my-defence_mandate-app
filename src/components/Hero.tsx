@@ -1,5 +1,6 @@
 import styles from './Hero.module.css'
 import { useReveal } from '../hooks/useReveal';
+import heroBanner from '/heroBanner1.png';
 
 export default function Hero() {
   useReveal();
@@ -28,7 +29,7 @@ export default function Hero() {
 
       <div className={styles.right}>
         <img
-          src="/heroBanner1.png"
+          src={heroBanner}
           alt="Hero banner showing a Taj Mahal and security Persons in the foreground"
         />
       </div>
