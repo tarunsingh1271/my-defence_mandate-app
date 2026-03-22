@@ -19,13 +19,12 @@ export default function Footer() {
         </div>
         <div className={styles.col}>
           <p className={styles.colTitle}>Company</p>
-          <Link to="/about">About Defence Mandate pvt Ltd</Link>
+          <Link to="/about">About Us</Link>
           <a href="#">Our Team</a>
-          <a href="#">Case Studies</a>
           <a href="#">Insights</a>
         </div>
         <div className={styles.col}>
-          <p className={styles.colTitle}>Contact</p>
+          <p className={styles.colTitle}>Contact us</p>
           <a href="#">Agra Office</a>
           <a href="#">defencemandate@gmail.com</a>
         </div>

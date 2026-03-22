@@ -19,7 +19,7 @@ export default function AboutPage() {
           </p>
           <div className={styles.actions}>
             <Link to="/#contact" className={styles.primaryAction}>
-              Discuss Your Hiring Mandate
+              Discuss Your Hiring Mandate 
             </Link>
             <Link to="/" className={styles.secondaryAction}>
               Back to Home

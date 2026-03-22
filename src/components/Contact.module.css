@@ -35,6 +35,44 @@
   gap: 20px;
 }
 
+.thankYouWrap {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.52));
+  border: 1px solid rgba(13, 13, 13, 0.12);
+  border-radius: 14px;
+  padding: 36px 34px;
+  box-shadow: 0 14px 30px rgba(13, 13, 13, 0.12);
+  backdrop-filter: blur(3px);
+}
+
+.thankYouWrap::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  border-radius: 14px 0 0 14px;
+  background: linear-gradient(180deg, var(--gold), var(--rust));
+}
+
+.thankYouMessage {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(21px, 2.1vw, 30px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0;
+  padding-left: 12px;
+  text-wrap: balance;
+}
+
+.thankYouMessage::first-line {
+  color: var(--rust);
+  font-weight: 800;
+}
+
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
