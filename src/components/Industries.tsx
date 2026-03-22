@@ -1,11 +1,8 @@
 import { useState } from 'react'
 import styles from './Industries.module.css'
 
-const tags = [
-  'Technology', 'Financial Services', 'Life Sciences', 'Professional Services',
-  'Consumer & Retail', 'Energy & Infrastructure', 'Private Equity', 'Education',
-  'Media & Creative', 'Healthcare', 'Government & Public Sector', 'Manufacturing',
-]
+const tags = ['Security Guards', 'Housekeeping Staff', 'Waiters', 'Kitchen Stewards', 'HR Support', 
+  'F&B Staff', 'Front Desk Executives', 'Receptionists']
 
 export default function Industries() {
   const [active, setActive] = useState('Technology')

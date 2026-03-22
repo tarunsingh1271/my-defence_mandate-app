@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Preloader from './components/Preloader'
+//import Preloader from './components/Preloader'
 import Cursor from './components/Cursor'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
@@ -7,6 +7,7 @@ import Marquee from './components/Marquee'
 import Services from './components/Services'
 import Process from './components/Process'
 import Industries from './components/Industries'
+// import CompanyHighlights from './components/CompanyHighlights'
 import Testimonial from './components/Testimonial'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -40,7 +41,7 @@ export default function App() {
 
   return (
     <>
-      <Preloader />
+      {/* <Preloader /> */}
       <Cursor />
       <Nav />
       <Hero />
@@ -48,6 +49,7 @@ export default function App() {
       <Services />
       <Process />
       <Industries />
+      {/* <CompanyHighlights /> */}
       <Testimonial />
       <Contact />
       <Footer />

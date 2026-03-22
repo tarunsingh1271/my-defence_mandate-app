@@ -11,6 +11,45 @@
   --gold: #D4A843;
   --slate: #4A4A5A;
   --fog: #E8E4DC;
+  --accent: #C94B2C;
+  --accent-bg: #F0E8DC;
+  --accent-border: #D4A843;
+  --border: #D8D2C7;
+  --text-h: #1A1A24;
+  --social-bg: #ECE4D7;
+  --shadow: 0 8px 20px rgba(13, 13, 13, 0.12);
+}
+
+html[data-theme='light'] {
+  --ink: #0D0D0D;
+  --cream: #F5F0E8;
+  --rust: #C94B2C;
+  --gold: #D4A843;
+  --slate: #4A4A5A;
+  --fog: #E8E4DC;
+  --accent: #C94B2C;
+  --accent-bg: #F0E8DC;
+  --accent-border: #D4A843;
+  --border: #D8D2C7;
+  --text-h: #1A1A24;
+  --social-bg: #ECE4D7;
+  --shadow: 0 8px 20px rgba(13, 13, 13, 0.12);
+}
+
+html[data-theme='dark'] {
+  --ink: #F8F5ED;
+  --cream: #101316;
+  --rust: #FF8E60;
+  --gold: #EAC76A;
+  --slate: #B7BDCC;
+  --fog: #1A2026;
+  --accent: #FF8E60;
+  --accent-bg: #1A2026;
+  --accent-border: #EAC76A;
+  --border: #2A333D;
+  --text-h: #F8F5ED;
+  --social-bg: #1A2026;
+  --shadow: 0 10px 22px rgba(0, 0, 0, 0.4);
 }
 
 html {
@@ -24,6 +63,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   cursor: none;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* Noise texture overlay */
