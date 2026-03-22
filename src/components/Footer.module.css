@@ -71,6 +71,7 @@
 .socials {
   display: flex;
   gap: 20px;
+  margin-right: 72px;
 }
 
 .socials a {
@@ -99,5 +100,9 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
+  }
+
+  .socials {
+    margin-right: 0;
   }
 }

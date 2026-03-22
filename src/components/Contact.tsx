@@ -22,7 +22,7 @@ export default function Contact() {
       {isSubmitted ? (
         <div className={styles.thankYouWrap}>
           <p className={styles.thankYouMessage}>
-            Thank you!!<br />Your request is submitted, we will call you shortly.
+            Thank you!!<br />Your request is submitted, we will contact you shortly.
           </p>
         </div>
       ) : (
