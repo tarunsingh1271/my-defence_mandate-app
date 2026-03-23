@@ -35,6 +35,15 @@
   gap: 20px;
 }
 
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .thankYouWrap {
   position: relative;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.52));
@@ -134,6 +143,20 @@
 .btn:hover {
   background: var(--ink);
   transform: translateY(-2px);
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  margin: 0;
+  color: #a12525;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 @media (max-width: 1024px) {
