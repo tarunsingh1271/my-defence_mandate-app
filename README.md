@@ -83,6 +83,32 @@ npm run lint
 - **ESLint** - Code linting
 - **Docker** - Containerization
 
+## Contact Form To Google Sheets
+
+The contact form supports sending enquiries to a Google Apps Script Web App URL.
+
+### 1. Add environment variable
+
+Copy `.env.example` to `.env` and set:
+
+VITE_GOOGLE_APPS_SCRIPT_URL=YOUR_APPS_SCRIPT_WEB_APP_URL
+
+### 2. Apps Script expected payload
+
+The frontend sends this payload as JSON text:
+
+- firstName
+- lastName
+- company
+- email
+- phone
+- requirement
+- source
+
+### 3. Deployment note
+
+Deploy your Apps Script as a Web App and allow access for public requests (for example, `Anyone`) so website users can submit enquiries.
+
 ## React Compiler
 
 The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
