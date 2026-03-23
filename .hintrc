@@ -14,9 +14,13 @@
       "default",
       {
         "ignore": [
-          "backdrop-filter"
+          "backdrop-filter",
+          "min-height: auto",
+          "text-wrap",
+          "text-wrap: balance"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }

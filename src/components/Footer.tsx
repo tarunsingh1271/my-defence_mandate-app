@@ -20,7 +20,7 @@ export default function Footer() {
         <div className={styles.col}>
           <p className={styles.colTitle}>Company</p>
           <Link to="/about">About Us</Link>
-          <a href="#">Our Team</a>
+          <Link to="/team">Our Team</Link>
           <a href="#">Insights</a>
         </div>
         <div className={styles.col}>
