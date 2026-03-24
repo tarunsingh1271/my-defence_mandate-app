@@ -83,6 +83,25 @@ npm run lint
 - **ESLint** - Code linting
 - **Docker** - Containerization
 
+## Vercel Deployment Checklist
+
+1. Import this repository in Vercel.
+2. Keep the default build settings:
+  - Build Command: `npm run build`
+  - Output Directory: `dist`
+3. Add project environment variables in Vercel for all environments you use (Production, Preview):
+  - `VITE_GOOGLE_APPS_SCRIPT_URL` = your deployed Google Apps Script Web App URL
+4. Redeploy after setting environment variables.
+
+### Google Apps Script Requirements (Contact Form)
+
+For contact submissions to reach Google Sheets consistently:
+
+1. Deploy the script as a Web App.
+2. Set access to `Anyone`.
+3. Ensure your script handles `POST` JSON bodies and writes rows to the intended sheet/tab.
+4. If script code changes, create a new deployment/version and update the web app URL if needed.
+
 ## Contact Form To Google Sheets
 
 The contact form supports sending enquiries to a Google Apps Script Web App URL.

@@ -44,7 +44,7 @@ export default function Contact() {
     setErrorMessage('')
 
     if (!APPS_SCRIPT_URL) {
-      setErrorMessage('Missing Google Apps Script URL. Add VITE_GOOGLE_APPS_SCRIPT_URL in your .env file.')
+      setErrorMessage('Missing Google Apps Script URL. Set VITE_GOOGLE_APPS_SCRIPT_URL in your environment (Vercel Project Settings -> Environment Variables).')
       return
     }
 
