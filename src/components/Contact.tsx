@@ -71,13 +71,27 @@ export default function Contact() {
         source: 'defence-mandate-site',
       }
 
+      const fullName = `${payload.firstName} ${payload.lastName}`.trim()
+      const compatibilityPayload = {
+        ...payload,
+        name: fullName,
+        fullName,
+        first_name: payload.firstName,
+        last_name: payload.lastName,
+        companyName: payload.company,
+        phoneNumber: payload.phone,
+        enquiry: payload.requirement,
+        message: payload.requirement,
+        timestamp: new Date().toISOString(),
+      }
+
       const response = await fetch(APPS_SCRIPT_URL, {
         method: 'POST',
         headers: {
           // text/plain avoids preflight issues common with Apps Script web apps.
           'Content-Type': 'text/plain;charset=utf-8',
         },
-        body: JSON.stringify(payload),
+        body: JSON.stringify(compatibilityPayload),
       })
 
       const rawResponse = await response.text()
