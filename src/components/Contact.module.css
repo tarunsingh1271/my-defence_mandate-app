@@ -153,7 +153,7 @@
 
 .errorMessage {
   margin: 0;
-  color: #a12525;
+  color: var(--rust);
   font-family: 'Manrope', sans-serif;
   font-size: 14px;
   line-height: 1.4;
