@@ -6,6 +6,7 @@ import './index.css'
 import App from './App.tsx'
 import AboutPage from './pages/AboutPage.tsx'
 import TeamPage from './pages/TeamPage.tsx'
+import CareerPage from './pages/CareerPage.tsx'
 
 function HashScrollHandler() {
   const location = useLocation()
@@ -34,6 +35,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/team" element={<TeamPage />} />
+        <Route path="/careers" element={<CareerPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

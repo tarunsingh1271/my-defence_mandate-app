@@ -21,12 +21,12 @@ export default function Footer() {
           <p className={styles.colTitle}>Company</p>
           <Link to="/about">About Us</Link>
           <Link to="/team">Our Team</Link>
-          <a href="#">Insights</a>
+          <Link to="/careers">Careers</Link>
         </div>
         <div className={styles.col}>
           <p className={styles.colTitle}>Contact us</p>
-          <a href="#">Agra Office</a>
-          <a href="#">defencemandate@gmail.com</a>
+          <a href="tel:+919999999999">Agra Office</a>
+          <a href="mailto:defencemandate@gmail.com">defencemandate@gmail.com</a>
         </div>
       </div>
       <div className={styles.bottom}>
