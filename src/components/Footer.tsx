@@ -6,14 +6,15 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.top}>
         <div className={styles.brand}>
-          <p className={styles.logo}>Defence Mandate Pvt Ltd <span>.</span></p>
+          <p className={styles.logo}>Defence Mandate <span>.</span></p>
+            <p className={styles.subtitle}>Facility Management and Secure Solutions Pvt Ltd</p>
           <p className={styles.tagline}>
             Connecting exceptional organisations with the talent that defines their future.
           </p>
         </div>
         <div className={styles.col}>
           <p className={styles.colTitle}>Services</p>
-          <a href="#">Executive Search</a>
+          <a href="#">Security Solution</a>
           <a href="#">Specialist Roles</a>
           <a href="#">Talent Advisory</a>
         </div>
@@ -25,15 +26,15 @@ export default function Footer() {
         </div>
         <div className={styles.col}>
           <p className={styles.colTitle}>Contact us</p>
-          <a href="tel:+919999999999">Agra Office</a>
-          <a href="mailto:defencemandate@gmail.com">defencemandate@gmail.com</a>
+          <a>Office headquarter</a>
+          <a href="mailto:defencemandate@gmail.com">defencemandatefs@gmail.com</a>
         </div>
       </div>
       <div className={styles.bottom}>
         <p className={styles.copy}>© 2026 Defence Mandate Ltd. All rights reserved.</p>
         <div className={styles.socials}>
-          <a href="#">LinkedIn</a>
-          <a href="#">Instagram</a>
+          <a href="https://www.linkedin.com/in/defence-mandate-facility-and-secure-solutions">LinkedIn</a>
+          <a href="https://www.instagram.com/defencemandate">Instagram</a>
         </div>
       </div>
     </footer>
