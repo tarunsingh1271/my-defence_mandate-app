@@ -162,7 +162,7 @@ export default function Contact() {
               <input
                 className={styles.input}
                 type="text"
-                placeholder="James"
+                placeholder="Sahil"
                 value={formData.firstName}
                 onChange={(event) => handleInputChange('firstName', event.target.value)}
                 required
@@ -173,7 +173,7 @@ export default function Contact() {
               <input
                 className={styles.input}
                 type="text"
-                placeholder="Whitfield"
+                placeholder="Kumar"
                 value={formData.lastName}
                 onChange={(event) => handleInputChange('lastName', event.target.value)}
               />
@@ -184,7 +184,7 @@ export default function Contact() {
             <input
               className={styles.input}
               type="text"
-              placeholder="Meridian Capital Group"
+              placeholder="Your Company Name"
               value={formData.company}
               onChange={(event) => handleInputChange('company', event.target.value)}
             />
@@ -194,7 +194,7 @@ export default function Contact() {
             <input
               className={styles.input}
               type="email"
-              placeholder="james@meridian.com"
+              placeholder="sahil@gmail.com"
               value={formData.email}
               onChange={(event) => handleInputChange('email', event.target.value)}
               required
@@ -216,7 +216,7 @@ export default function Contact() {
             <input
               className={styles.input}
               type="text"
-              placeholder="Security guard, Housekeeper..."
+              placeholder="Security guard, Housekeeping staff..."
               value={formData.requirement}
               onChange={(event) => handleInputChange('requirement', event.target.value)}
               required
