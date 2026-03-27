@@ -21,6 +21,18 @@
 
 .logo span {
   color: var(--rust);
+.subtitle {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  font-weight: 500;
+  max-width: 260px;
+  line-height: 1.5;
+}
+
 }
 
 .tagline {

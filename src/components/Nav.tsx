@@ -6,8 +6,11 @@ import { Link } from 'react-router-dom'
 export default function Nav() {
   return (
     <nav className={styles.nav}>
-      <Link to="/" className={styles.logo}>
-        <img src={logo} alt="Defence Mandate" />
+      <Link to="/" className={styles.logoContainer}>
+        <div className={styles.logoWrapper}>
+          <img src={logo} alt="Defence Mandate" className={styles.logoText} />
+          <img src="/logo image.png" alt="Defence Mandate Logo" className={styles.logoImage} />
+        </div>
       </Link>
       <div className={styles.links}>
         <a href="/#services">Services</a>

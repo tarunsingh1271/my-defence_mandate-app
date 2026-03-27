@@ -2,30 +2,29 @@ import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Cursor from '../components/Cursor'
-import logoImage from '../assets/logo.jpg'
 import styles from './TeamPage.module.css'
 
 const teamMembers = [
   {
     name: 'Dharmender Singh',
-    role: 'Founder & Search Lead',
-    photo: '/heroBanner1.png',
+    role: 'Director & Search Lead',
+    photo: '/f1.png',
     responsibilities:
-      'Leads executive mandates, aligns hiring strategy with business goals, and oversees final candidate calibration with client leadership.',
+      'Directs executive search mandates, aligning talent acquisition strategies with overarching business objectives and leading final candidate calibration with client leadership.',
   },
   {
     name: 'Udit Shrivastava',
-    role: 'Senior Talent Consultant',
-    photo: '/favicon.jpg',
+    role: 'Director & Head of Talent Acquisition',
+    photo: '/f3.png',
     responsibilities:
-      'Owns market mapping, drives candidate outreach, and manages end-to-end interview coordination for specialist and mid-senior roles.',
+      'Architects overarching talent acquisition strategies, overseeing comprehensive market mapping and designing scalable, end-to-end recruitment frameworks to drive company growth.',
   },
   {
     name: 'Varun Singh',
-    role: 'Human resources & Operations Manager',
-    photo: logoImage,
+    role: 'HR & Operations Manager',
+    photo: '/f2.png',
     responsibilities:
-      'Maintains client communication, tracks weekly progress, and ensures hiring timelines remain structured, visible, and outcome-focused.',
+      'Drives operational excellence across all engagements, establishing robust reporting frameworks to guarantee structured, outcome-focused delivery for executive stakeholders.',
   },
 ]
 

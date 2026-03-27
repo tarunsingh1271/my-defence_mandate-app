@@ -12,18 +12,30 @@
   mix-blend-mode: multiply;
 }
 
-.logo {
+.logoContainer {
   flex: 0 0 var(--nav-side-width);
   display: block;
   text-decoration: none;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .navBalance {
   flex: 0 0 var(--nav-side-width);
 }
 
-.logo img {
+.logoText {
   height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logoImage {
+  height: 50px;
   width: auto;
   object-fit: contain;
 }
