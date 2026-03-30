@@ -4,26 +4,20 @@ import styles from './Testimonial.module.css'
 const testimonials = [
   {
     quote: "Defence mandate didn't just fill the role — they found someone who has genuinely changed the trajectory of our company. The calibre of their process is unlike any recruiter we've worked with.",
-    author: 'Sarah Whitmore',
+    author: 'Sahil Kumar',
     role: 'Chief People Officer, Meridian Capital Group',
-    image:
-      'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80',
   },
   {
     quote:
       'The team at defence mandate is phenomenal. They understood our needs perfectly and delivered a candidate who was a perfect fit for our culture and our team. We could not be happier.',
-    author: 'John Doe',
+    author: 'Abhijeet Singh',
     role: 'CEO, Tech Innovations',
-    image:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
   },
   {
     quote:
       "Working with defence mandate has been a game-changer for us. Their dedication and expertise in finding top talent is unmatched. I would recommend them to anyone looking to build a strong team.",
-    author: 'Jane Smith',
+    author: 'Priya Desai',
     role: 'CTO, Future Solutions',
-    image:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80',
   },
 ]
 
@@ -72,16 +66,13 @@ export default function Testimonial() {
       onMouseLeave={() => setIsPaused(false)}
     >
       <h2 className={styles.heading}>What Our Clients Say</h2>
-      <div className={`${styles.fade}`} key={currentIndex}>
+      <div className={`${styles.content} ${styles.fade}`} key={currentIndex}>
         <div className={styles.quoteMark}>"</div>
         <p className={styles.quoteText}>{currentTestimonial.quote}</p>
         <div className={styles.quoteAuthor}>
           <p className={styles.authorName}>{currentTestimonial.author}</p>
           <p className={styles.authorRole}>{currentTestimonial.role}</p>
         </div>
-      </div>
-      <div className={`${styles.visual} ${styles.fade}`} key={currentIndex + 'img'}>
-        <img src={currentTestimonial.image} alt="Client" />
       </div>
       
       <div className={styles.dots}>

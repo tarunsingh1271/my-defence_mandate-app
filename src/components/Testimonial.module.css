@@ -2,10 +2,16 @@
   background: var(--fog);
   padding: 120px 60px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1fr;
+  gap: 24px;
   align-items: center;
+  justify-items: center;
   border-top: 2px solid var(--ink);
+}
+
+.content {
+  max-width: 900px;
+  text-align: center;
 }
 
 .heading {
@@ -21,7 +27,7 @@
   font-size: 120px;
   line-height: 0.8;
   color: var(--rust);
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .quoteText {
@@ -36,6 +42,7 @@
 
 .quoteAuthor {
   margin-top: 32px;
+  text-align: center;
 }
 
 .authorName {
@@ -64,29 +71,6 @@
   to {
     opacity: 1;
   }
-}
-
-.visual {
-  position: relative;
-  height: 480px;
-}
-
-.visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(30%);
-}
-
-.visual::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 100%;
-  height: 100%;
-  border: 2px solid var(--rust);
-  z-index: -1;
 }
 
 .dots {
@@ -133,10 +117,6 @@
 
 @media (max-width: 1024px) {
   .testimonial {
-    grid-template-columns: 1fr;
     padding: 80px 30px;
-  }
-  .visual {
-    display: none;
   }
 }

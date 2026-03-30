@@ -32,6 +32,14 @@
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 48px;
+  align-items: flex-start;
+}
+
+.roleItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .tag {
@@ -39,6 +47,9 @@
   background: transparent;
   padding: 12px 28px;
   border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: 'DM Mono', monospace;
   font-size: 12px;
   letter-spacing: 0.1em;
@@ -46,6 +57,17 @@
   color: var(--ink);
   cursor: none;
   transition: all 0.2s;
+}
+
+.tagIcon {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  flex-shrink: 0;
 }
 
 .tag:hover {
@@ -59,8 +81,38 @@
   color: var(--cream);
 }
 
+.inlineDetails {
+  border: 1.5px solid var(--ink);
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: var(--cream);
+  max-width: 420px;
+  animation: inlineFade 0.25s ease-out;
+}
+
+.detailsText {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+@keyframes inlineFade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 1024px) {
   .industries {
     padding: 80px 30px;
+  }
+
+  .inlineDetails {
+    max-width: 100%;
   }
 }
